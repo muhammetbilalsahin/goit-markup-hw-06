@@ -24,25 +24,33 @@
     <header class="starter">
         <!--Top-Left links-->
         <div class="container menu">
+            <input type="checkbox" id="mobile-toggle" hidden />
+
             <nav class="menu-nav">
                 <a class="logo" href="/"><span class="logo-web">WEB</span>STUDIO</a>
-                <a href="#">
+
+                <!-- Menü Açma -->
+                <label for="mobile-toggle" class="mobile-menu-open">
                     <svg class="hamburger-menu" width="24" height="24">
                         <use href="./images/icons.svg#icon-manu"></use>
                     </svg>
-                </a>
-                <ul class="menu-nav-ul close">
+                </label>
+
+                <!-- Menü Kapatma -->
+                <label for="mobile-toggle" class="mobile-menu-close">
+                    <svg class="modal-window-x" width="8" height="8">
+                        <use href="./images/icons.svg#icon-vectorx"></use>
+                    </svg>
+                </label>
+
+                <!-- Menü Linkleri -->
+                <ul class="menu-nav-ul">
                     <li class="menu-nav-li"><a class="link" href="#">Studio</a></li>
-                    <li class="menu-nav-li">
-                        <a class="link" href="#">Portfolio</a>
-                    </li>
-                    <li class="menu-nav-li">
-                        <a class="link" href="#">Contacts</a>
-                    </li>
+                    <li class="menu-nav-li"><a class="link" href="#">Portfolio</a></li>
+                    <li class="menu-nav-li"><a class="link" href="#">Contacts</a></li>
                 </ul>
             </nav>
-            <!--Top-Right links-->
-            <address class="address-nav close">
+            <address class="address-nav">
                 <ul class="address-ul">
                     <li class="address-li">
                         <a class="address-a" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -52,7 +60,9 @@
                     </li>
                 </ul>
             </address>
+
         </div>
+
     </header>
     <!--Main Begin-->
     <main>
@@ -130,8 +140,7 @@
                 <h2 class="title-team">Our Team</h2>
                 <ul class="team-ul">
                     <li class="team-li">
-                        <img class="img" srcset="./images/img1.jpg, ./images/img1 @2x.jpg" src="./images/img1.jpg"
-                            alt="Mark Photo" />
+                        <img class="img" srcset="./images/img1 @2x.jpg" src="./images/img1.jpg" alt="Mark Photo" />
                         <div class="intro">
                             <h3 class="bold">Mark Guerrero</h3>
                             <p class="text">Product Designer</p>
@@ -169,8 +178,7 @@
                     </li>
 
                     <li class="team-li">
-                        <img class="img" srcset="./images/img2.jpg, ./images/img2 @2x.jpg" src="./images/img2.jpg"
-                            alt="Tom Photo" />
+                        <img class="img" srcset="./images/img2 @2x.jpg" src="./images/img2.jpg" alt="Tom Photo" />
                         <div class="intro">
                             <h3 class="bold">Tom Ford</h3>
                             <p class="text">Frontend Developer</p>
@@ -208,7 +216,7 @@
                     </li>
 
                     <li class="team-li">
-                        <img class="img" src="./images/img3.jpg" alt="Camila Photo" />
+                        <img class="img" srcset="./images/img3 @2x.jpg" src="./images/img3.jpg" alt="Camila Photo" />
                         <div class="intro">
                             <h3 class="bold">Camila Garcia</h3>
                             <p class="text">Marketing</p>
@@ -246,7 +254,7 @@
                     </li>
 
                     <li class="team-li">
-                        <img class="img" src="./images/img4.jpg" alt="Daniel Photo" />
+                        <img class="img" srcset="./images/img4 @2x.jpg" src="./images/img4.jpg" alt="Daniel Photo" />
                         <div class="intro">
                             <h3 class="bold">Daniel Wilson</h3>
                             <p class="text">UI Designer</p>
@@ -439,7 +447,7 @@
                     <button type="submit" class="footer-button">
                         Subscribe
                         <svg width="24" height="24" class="footer-button-svg">
-                            <use href="./images/icons.svg#icon-arrow"></use>
+                            <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
